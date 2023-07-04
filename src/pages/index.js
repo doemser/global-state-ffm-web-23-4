@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home({ dinosaurs, onDinoLike }) {
   return (
     <>
@@ -18,6 +20,7 @@ export default function Home({ dinosaurs, onDinoLike }) {
           );
         })}
       </ul>
+      <Link href="/liked">Liked Dinos</Link>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 const initialDinos = [
   {
@@ -52,6 +53,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Link href="/">Home</Link>
       <Component
         {...pageProps}
         dinosaurs={dinosaurs}
